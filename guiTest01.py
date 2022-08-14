@@ -15,17 +15,17 @@ main_app.geometry("%dx%d-0-0" % (width_value, height_value))
 frame = tk.Frame(main_app, bg='#000000')
 frame.place(relwidth=1, relheight=1)
 
-# DES Logo
+#DES Logo
 DES_logo=tk.Label(frame, text='TrackLink v0.1', font='ariel 18 bold', bg='#000000', fg='#626262')
 DES_logo.place(relx=0.01, rely=0.81, relwidth=0.20, relheight=0.1)
 
 #RPM Label
 RPM_label = tk.Label(frame, text="RPM", font='ariel 20 bold', bg='#000000', fg='red')
-RPM_label.place(relx=0.13, rely=0.18, relwidth=0.2, relheight=0.08)
+RPM_label.place(relx=0.10, rely=0.17, relwidth=0.1, relheight=0.08)
 
 #RPM Digits
-RPM_digits = tk.Label(frame, font='ariel 52 ', bg='#000000', fg='white')
-RPM_digits.place(relx=0.02, rely=0.2, relwidth=0.18, relheight=0.08)
+RPM_digits = tk.Label(frame, font='ariel 32 ', bg='#000000', fg='white')
+RPM_digits.place(relx=0.01, rely=0.18, relwidth=0.11, relheight=0.08)
 
 RPMcount = 2000
 RPM_digits['text'] = RPMcount
@@ -37,6 +37,10 @@ SPEED_digits.place(relx=0.34, rely=0.3, relwidth=0.3, relheight=0.3)
 #SPEED Label
 SPEED_label = tk.Label(frame, text="MPH", font='ariel 20 bold', bg='#000000', fg='red')
 SPEED_label.place(relx=0.46, rely=0.55, relwidth=0.06, relheight=0.05)
+
+#GEAR Digit
+SPEED_label = tk.Label(frame, text="4", font='ariel 60 bold', bg='#000000', fg='grey')
+SPEED_label.place(relx=0.46, rely=0.20, relwidth=0.06, relheight=0.12)
 
 #Canvas
 my_canvas2 = tk.Canvas(frame, width = 1250, height = 120, background = '#000111', highlightthickness=0)
